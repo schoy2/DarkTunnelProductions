@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.views.generic.base import TemplateView
-
+#//This is a test 
 from menu.views import (
 	#menu_listview,
 	MenuListView,
