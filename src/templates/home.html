@@ -1,0 +1,25 @@
+{%extends "base.html"%}
+{%block head_title%}{{block.super}}{%endblock head_title%}
+{%block content%}
+
+<h1> Hello world!</h1>
+<p>This is {%verbatim %}{{html_var}} {% endverbatim%}comming through</p>
+
+<p>
+{%if num is not None%}
+Radom number is {{num}}
+{%endif%}	
+</p>
+
+<p>
+{%for some_item in some_list %}	
+	{% if some_item|divisibleby:"2" %}
+	Even Number
+	{% endif %}
+{{ some_item }} <br/>
+{% endfor %}
+</p>
+
+<p>Some item is {{some_item}}</p>
+
+{%endblock content%}
