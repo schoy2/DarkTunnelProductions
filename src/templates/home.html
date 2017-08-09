@@ -1,25 +1,202 @@
 {%extends "base.html"%}
-{%block head_title%}{{block.super}}{%endblock head_title%}
 {%block content%}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<h1> Hello world!</h1>
-<p>This is {%verbatim %}{{html_var}} {% endverbatim%}comming through</p>
+    <link rel="icon" href="src/templates/favicon.ico">
 
-<p>
-{%if num is not None%}
-Radom number is {{num}}
-{%endif%}	
-</p>
+    <title>DarkTunnelProductions Title</title>
+    <link href = "Content/bootstrap.min.css" rel ="stylesheet" />
+    <link href ="Content/Styles.css" rel="stylesheet"/>
 
-<p>
-{%for some_item in some_list %}	
-	{% if some_item|divisibleby:"2" %}
-	Even Number
-	{% endif %}
-{{ some_item }} <br/>
-{% endfor %}
-</p>
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css">
 
-<p>Some item is {{some_item}}</p>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-{%endblock content%}
+    <!-- Custom styles for this template -->
+    <link href="http://getbootstrap.com/examples/jumbotron/jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
+		<style>
+		body{
+				padding-top: 0px;
+	    	padding-bottom: 0px;
+        background="cover.jpg">
+        background-image: url('cover.jpg');
+		}
+		</style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+          <div class="row">
+            <div class ="col-md-12 jumbotron">
+              <div class="text-center">
+                  <h1>Dark Tunnel Productions</h1>
+                  <p>This is a template for a simple marketing or informational website.
+					        It includes a large callout called a jumbotron and three supporting pieces of content.
+					        Use it as a starting point to create something more unique.</p>
+                <p><a class="btn btn-success btn-primary" href="#" role="button">Learn more &raquo;</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+
+    <div class="container">
+
+
+
+      <hr>
+
+      <footer>
+        <!--<p>&copy; 2017 Company, Inc.</p>-->
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+  <body>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Migraine- A Short Horror Film</h1>
+        <p>A Short Horror Film, made by our very own Dark Tunnel Productions.
+          We are excited to bring this to everyone, as this is our very first film we've created.
+          We hope it gives you the chills! If you enjoyed watching, click the like button!
+          Also, don't forget to share with your friends, and subscribe for more great, original content soon to come!</p>
+        <div style="position:relative;height:0;padding-bottom:56.21%">
+          <iframe src="https://www.youtube.com/embed/_GlvdLJdR2I?ecver=2"
+            style="position:absolute;width:100%;height:100%;left:0" width="641" height="360"
+            frameborder="0" allowfullscreen>
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <hr>
+
+      <footer>
+        <!--<p>&copy; 2017 Company, Inc.</p>-->
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+
+  <body>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Red Number Official Trailer</h1>
+        <p>Red Number, a short horror film. Coming 12.12.16. Will you answer the call?
+          Be sure to subscribed to be notified when you can watch it for yourself!
+          Find us on Facebook: www.facebook.com/darktunnelproductions
+          Follow us on Twitter: @darktunnelfilms</p>
+
+            <div style="position:relative;height:0;padding-bottom:56.21%">
+              <iframe src="https://www.youtube.com/embed/ve0RMuh8cC8?ecver=2"
+              style="position:absolute;width:100%;height:100%;left:0" width="641" height="360"
+              frameborder="0" allowfullscreen>
+              </iframe>
+            </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <hr>
+
+      <footer>
+        <!--<p>&copy; 2017 Company, Inc.</p>-->
+      </footer>
+    </div> <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+  <body>
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Red Number- An Original Short</h1>
+        <p>Experience the thrilling new original Dark Tunnel short, Red Number!
+          Will you answer the call?
+          Follow us @darktunnelfilms
+          Find us on Facebook: www.facebook.com/darktunnelproductions</p>
+
+
+        <div style="position:relative;height:0;padding-bottom:56.21%">
+          <iframe src="https://www.youtube.com/embed/YV7oRsNkujc?ecver=2"
+          style="position:absolute;width:100%;height:100%;left:0"
+          width="641" height="360" frameborder="0"
+          allowfullscreen>
+          </iframe>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="container">
+      <hr>
+
+      <footer>
+        <p>&copy; 2017 Company, Inc.</p>
+      </footer>
+    </div> <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+
+
+{%endblock%}

@@ -1,0 +1,20 @@
+{%extends "base.html"%}
+
+{%block head_title%}Email | {{block.super}}{%endblock head_title%}
+
+{%block content%}
+<h1>Create a New Account</h1>
+
+{% if errors %}
+{{errors}}
+{% endif %}
+<form method='POST'>{%csrf_token%}<!-- This is used for security-->
+    <!--<input type='text'name='name'placeholder ="Your Name"><br/>
+    <input type='text'name='email'placeholder ="Your Email"><br/>
+    <input type='text'name='about_you'placeholder ="About you"><br/>-->
+    {{ form.as_p }}
+    <button type ='Create Account'>Save</button>
+    <p>Please check you email for account activation</p>
+</form>
+
+{% endblock %}
