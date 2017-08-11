@@ -1,3 +1,4 @@
+#Samuel Choy
 from django.db.models import Q
 import random
 from django.http import HttpResponse, HttpResponseRedirect
