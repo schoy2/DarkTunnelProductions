@@ -21,14 +21,17 @@ from menu.views import (
 	#menu_listview,
 	MenuListView,
 	MenuDetailView,
-    email_createview
+    #email_createview
+    MenuCreateView
+
 	#LastNameListView
 )
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', TemplateView.as_view(template_name='home.html')),
     url(r'^menu/$', MenuListView.as_view()),
-    url(r'^menu/create/$', email_createview),
+    #url(r'^menu/create/$', email_createview),
+    url(r'^menu/create/$', MenuCreateView.as_view()),
     url(r'^menu/(?P<slug>[\w-]+)/$', MenuDetailView.as_view()),
     #url(r'^menu/last_name/$', LastNameListView.as_view()),
     url(r'^about/$', TemplateView.as_view(template_name='about.html')),
